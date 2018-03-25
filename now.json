@@ -1,0 +1,6 @@
+{
+    "public": true,
+    "env": {
+        "NODE_ENV": "PRODUCTION"
+    }
+}

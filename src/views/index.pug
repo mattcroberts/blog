@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  a(href='/post/new') Create New Post
+  ul
+    each post in posts
+      li
+        a(href='post/' + post.id)
+          = post.title

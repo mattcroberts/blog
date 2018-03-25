@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h2 Create Post
+    
+    form(method='POST' class='Create')
+        label(for='title' class='Label')  Title
+        input(id='title' name='title' class='Control')
+
+        label(for='body' class='Label') Body
+        textarea(id='body' name='body' class='Control BlogBody')
+
+        button(type='submit' class='Button') Create
