@@ -11,7 +11,7 @@ const { create, list, view } = require('./routes/posts');
 const dbUrl = new URL(
     `mongodb://${process.env.dbUsername}:${process.env.dbPassword}@${
         process.env.dbHost
-    }/${process.env.dbName}`
+    }/${process.env.dbName}?authSource=admin`
 );
 
 mongoose.set('bufferCommands', false);
